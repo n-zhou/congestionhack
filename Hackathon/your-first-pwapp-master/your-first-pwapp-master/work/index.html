@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="canonical" href="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nuuuber</title>
+<link rel="stylesheet" type="text/css" href="styles/inline.css">
+
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+   <meta charset="utf-8">
+   <title>Directions service</title>
+   <style>
+     /* Always set the map height explicitly to define the size of the div
+      * element that contains the map. */
+     #map {
+       height: 100%;
+     }
+     /* Optional: Makes the sample page fill the window. */
+     html, body {
+       height: 100%;
+       margin: 0;
+       padding: 0;
+     }
+     #floating-panel {
+       position: absolute;
+       top: 10px;
+       left: 25%;
+       z-index: 5;
+       background-color: #fff;
+       padding: 5px;
+       border: 1px solid #999;
+       text-align: center;
+       font-family: 'Roboto','sans-serif';
+       line-height: 30px;
+       padding-left: 10px;
+     }
+   </style>
+
+
+</head>
+<body>
+
+<header class="header">
+<h1 class="header__title">Nuuuber</h1>
+<button id="butAdd" class="headerButton" aria-label="Add"></button>
+</header>
+
+<div class="dialog-container">
+<div class="dialog">
+  <div class="dialog-title">Add Additional Options</div>
+  <div class="dialog-body">
+    <select id="additionalOptions">
+      <option value="2357536">Weather</option>
+      <option value="2367105">Special Events</option>
+      <option value="2379574">Traffic roadwork/accidents</option>
+      <option value="2379574">Petrol wait time price</option>
+      <option value="2379574">Socially Optimal? (Default value Yes)</option>
+    </select>
+  </div>
+  <div class="dialog-buttons">
+    <button id="butAddOptions" class="button">Add</button>
+    <button id="butAddCancel" class="button">Cancel</button>
+  </div>
+</div>
+</div>
+
+<br></br>
+<br></br>
+
+<form>
+  Start Address: <input type="text" name ="startAddress">
+  <br></br>
+  Destination Address: <input type="text" name="destinationAddress">
+</form>
+
+<br>
+
+<form>
+Vehicle model: <input type="text" name="vehicleModelNumber">
+</form>
+
+<br></br>
+
+<button type="button">Plan My Trip!</button>
+
+<br></br>
+<br></br>
+
+<iframe
+width="700"
+height="550"
+frameborder="20" style="border:0"
+src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyBXcYRFK0VgmN4nzkfJYHw6JxyuNybXGGI&origin=Oslo+Norway&destination=Telemark+Norway&avoid=tolls|highways" allowfullscreen>
+</iframe>
+
+</br>
+
+<script src="scripts/app.js" async></script>
+
+</body>
+</html>

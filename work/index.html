@@ -8,50 +8,69 @@
 <title>Nuuuber</title>
 <link rel="stylesheet" type="text/css" href="styles/inline.css">
 
+
+
+
 </head>
 <body>
 
 <header class="header">
-  <h1 class="header__title">Nuuuber</h1>
-  <button id="butAdd" class="headerButton" aria-label="Add"></button>
+<h1 class="header__title">Nuuuber</h1>
+<button id="butAdd" class="headerButton" aria-label="Add"></button>
 </header>
 
 <div class="dialog-container">
-  <div class="dialog">
-    <div class="dialog-title">Add Additional Options</div>
-    <div class="dialog-body">
-      <select id="additionalOptions">
-        <option value="2357536">Weather</option>
-        <option value="2367105">Special Events</option>
-        <option value="2379574">Traffic roadwork/accidents</option>
-        <option value="2379574">Petrol wait time price</option>
-        <option value="2379574">Socially Optimal? (Default value Yes)</option>
-      </select>
-    </div>
-    <div class="dialog-buttons">
-      <button id="butAddOptions" class="button">Add</button>
-      <button id="butAddCancel" class="button">Cancel</button>
-    </div>
+<div class="dialog">
+  <div class="dialog-title">Add Additional Options</div>
+  <div class="dialog-body">
+    <select id="additionalOptions">
+      <option value="2357536">Weather</option>
+      <option value="2367105">Special Events</option>
+      <option value="2379574">Traffic roadwork/accidents</option>
+      <option value="2379574">Petrol wait time price</option>
+      <option value="2379574">Socially Optimal? (Default value Yes)</option>
+    </select>
   </div>
+  <div class="dialog-buttons">
+    <button id="butAddOptions" class="button">Add</button>
+    <button id="butAddCancel" class="button">Cancel</button>
+  </div>
+</div>
 </div>
 
 <br></br>
 <br></br>
 
 <form>
-    Start Address: <input type="text" name ="startAddress">
-    <br></br>
-    Destination Address: <input type="text" name="destinationAddress">
+  Start Address: <input type="text" name ="startAddress">
+  <br></br>
+  Destination Address: <input type="text" name="destinationAddress">
 </form>
 
 <br>
 
 <form>
-  Vehicle model: <input type="text" name="vehicleModelNumber">
+Vehicle model: <select>
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="mercedes">Mercedes</option>
+  <option value="audi">Audi</option>
+</select>
+</form>
+
+<br>
+
+<form>
+  Weather: Rainy
+</form>
+
+<br>
+
+<form>
+Petrol:
 </form>
 
 <br></br>
-
 <button type="button">Plan My Trip!</button>
 
 <br></br>
